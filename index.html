@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kombat Script | 2D Fighting Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <!-- HUD -->
+        <div id="hud">
+            <!-- Player 1 Health -->
+            <div class="health-container">
+                <div id="player1-health-bg" class="health-bg"></div>
+                <div id="player1-health" class="health-fill"></div>
+            </div>
+
+            <!-- Timer -->
+            <div id="timer">99</div>
+
+            <!-- Player 2 Health -->
+            <div class="health-container">
+                <div id="player2-health-bg" class="health-bg"></div>
+                <div id="player2-health" class="health-fill"></div>
+            </div>
+        </div>
+
+        <div id="display-text">Tie</div>
+        
+        <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <!-- UI Overlays -->
+    <div id="menu-overlay" class="overlay">
+        <h1>KOMBAT SCRIPT</h1>
+        <p>PLAYER 1: WASD + SPACE (Attack)</p>
+        <p>PLAYER 2: ARROWS + ENTER (Attack)</p>
+        <button id="start-btn">START KOMBAT</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
